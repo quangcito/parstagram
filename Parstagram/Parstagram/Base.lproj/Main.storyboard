@@ -119,10 +119,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23F-Ab-AuB">
-                                <rect key="frame" x="42" y="450" width="75" height="35"/>
+                                <rect key="frame" x="42" y="450" width="291" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Submit"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wMH-Zr-7Bn"/>
