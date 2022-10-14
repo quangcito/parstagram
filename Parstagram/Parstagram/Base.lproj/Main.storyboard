@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,6 +144,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="stM-9G-fhw">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="gRU-yN-X61">
+                            <connections>
+                                <action selector="onLogoutButton:" destination="4oo-gD-YQP" id="4jx-Fs-Zmc"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="insta_camera_btn" id="bUq-uD-mSf">
                             <connections>
                                 <segue destination="SPd-kA-6pn" kind="presentation" id="B46-F6-VQF"/>
@@ -210,7 +215,7 @@
         <!--Navigation Controller-->
         <scene sceneID="ZXE-h2-aM7">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="wsp-ND-bCu" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="wsp-ND-bCu" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JoZ-OX-ha3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
