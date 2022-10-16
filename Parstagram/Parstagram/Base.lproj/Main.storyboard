@@ -137,7 +137,7 @@
                                             <outlet property="usernameLabel" destination="D9R-Hv-Cnt" id="aXh-ER-MGd"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="sTU-TK-xFv">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CommentCell" id="sTU-TK-xFv" customClass="CommentCell" customModule="Parstagram" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="483" width="375" height="37.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sTU-TK-xFv" id="txS-sx-c3c">
@@ -165,6 +165,32 @@
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3VS-Tn-hzU" secondAttribute="trailing" constant="8" id="apQ-LT-5dL"/>
                                                 <constraint firstItem="3VS-Tn-hzU" firstAttribute="leading" secondItem="bUx-Uo-sqO" secondAttribute="trailing" constant="8" id="oW1-Xh-uKb"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3VS-Tn-hzU" secondAttribute="bottom" constant="8" id="sNT-Et-rej"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentLabel" destination="3VS-Tn-hzU" id="BEq-Kh-HKe"/>
+                                            <outlet property="nameLabel" destination="bUx-Uo-sqO" id="haw-Z1-Tll"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="50S-Oc-ucB">
+                                        <rect key="frame" x="0.0" y="520.5" width="375" height="37"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="50S-Oc-ucB" id="581-fU-ZBS">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="37"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wi-ai-P23">
+                                                    <rect key="frame" x="16" y="8" width="351" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="8wi-ai-P23" firstAttribute="leading" secondItem="581-fU-ZBS" secondAttribute="leading" constant="16" id="COy-PW-y7t"/>
+                                                <constraint firstAttribute="trailing" secondItem="8wi-ai-P23" secondAttribute="trailing" constant="8" id="CSK-yN-bLV"/>
+                                                <constraint firstItem="8wi-ai-P23" firstAttribute="top" secondItem="581-fU-ZBS" secondAttribute="top" constant="8" id="GMP-ox-FRv"/>
+                                                <constraint firstAttribute="bottom" secondItem="8wi-ai-P23" secondAttribute="bottom" constant="8" id="Rr9-ur-YIj"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
